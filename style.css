@@ -1,0 +1,37 @@
+.container {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+table, td {
+    border: 1px solid #333;
+}
+
+thead, tfoot {
+
+    background-color: #333;
+    color: #fff;
+}
+
+td, th, tr {
+    text-align: center;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+
+#form-book {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.form-items {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
