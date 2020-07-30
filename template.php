@@ -11,7 +11,7 @@
     <header>
         <a href="index.php"><h1 id="title">Booksss</h1></a>
         <p>Bienvenue sur Booksss !</p> 
-        <a href="http://localhost/books/viewForm.php">Ajouter des livres !</a><br>
+        <a href="http://localhost/books/form.php">Ajouter des livres !</a><br>
     </header>
 
     <main>

@@ -9,10 +9,12 @@ ob_start(); ?>
 <a href="http://localhost/books/index.php">Revenir aux livres !</a><br>
 
     <div id="form-book">
-        <form action="form.php?action=create" method="post">
+        <form action="form.php" method="post">
+
+            <input type="hidden" name="id" value="<?= $id; ?>">
 
             <label for="b_title">Titre du livre</label><br>
-            <input class="form-items" type="text" name="b_title" id="b_title" value="<?= $b_title ? $b_title : " "; ?>">
+            <input class="form-items" type="text" name="b_title" id="b_title" value="<?= $b_title; ?>">
             <br>
 
             <label for="b_author">Auteur :</label><br>
@@ -28,7 +30,7 @@ ob_start(); ?>
             <br>
 
             <label for="b_synopsis">Synopsis :</label><br>
-            <textarea type="text" name="b_synopsis" id="b_synopsis" class="form-items" rows="5" cols="33"><?= $b_synopsis ? $b_synopsis : " "; ?></textarea>
+            <textarea type="text" name="b_synopsis" id="b_synopsis" class="form-items" rows="5" cols="33"><?= $b_synopsis; ?></textarea>
             <br>
 
             <label for="b_price">Prix :</label><br>
