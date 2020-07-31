@@ -30,3 +30,10 @@ function editBook($data) {
     $book->execute($data);
 
 }
+
+function removeBook($id) {
+
+    $bdd = getBdd();
+    $req = $bdd->prepare("DELETE FROM info WHERE id=?");
+    $req->execute(array($id));
+}

@@ -41,11 +41,11 @@ ob_start(); ?>
             <input class="form-items" type="number" name="b_numberPages" id="b_numberPages" min="1" max="10000" value="<?= $b_numberPages; ?>">
             <br>
 
-            <?php if ($update == true): ?>
+            <?php if ($update === true): ?>
                 <button type="submit" class="form-items" name="update"> Mettre à jour </button>
             <?php else: ?>
                 <button type="submit" class="form-items" name="save"> Enregistrer </button>
-            <?php endif ?>
+            <?php endif; ?>
 
         </form>
         

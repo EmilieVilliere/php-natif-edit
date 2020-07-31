@@ -31,8 +31,11 @@ ob_start(); ?>
                 <td> <?= $book["b_price"] ?> </td>
                 <td> <?= $book["b_numberPages"] ?> </td>
                 <td>
-				    <a href="form.php?edit=<?= $book['id']; ?>">Modifier</a>
+                    <a href="form.php?edit=<?= $book['id']; ?>">Modifier</a>
                 </td> 
+                <td>
+				    <a href="form.php?del=<?= $book['id']; ?>">Supprimer</a>
+                </td>
             </tr>
 
 <?php endforeach; ?>
